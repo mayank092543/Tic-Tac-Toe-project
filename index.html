@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+
+    <link rel = "stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id = "ticTacToe-app">
+
+        <div id ="title">
+
+            <h1>Welcome to TIC TAC TOE Game </h1>
+
+        </div>
+
+            <div id = "players-name">
+                <form id = "form">
+
+                    <label id = "player1"><a class = "player">Player 1: </a></label>
+                    <input type = "text" id = "player-1-name" placeholder = "Please enter your name">
+
+                    <label id = "player2"><a class = "player">Player 2: </a></label>
+                    <input type = "text" id = "player-2-name" placeholder = "Please enter your name">
+
+                    <button id = "toss-btn" type = "submit" value = "submit">TOSS</button> <br><br>
+                
+                </form>
+            </div>
+
+            <div id = "assign-players">
+
+                <label id = "random1">Player X : </label><span id = "nameX"></span>
+                <p id = "info"></p>
+                <label id = "random2">Player O : </label><span id = "nameO"></span>
+              
+            </div>
+
+            <div id = "board">
+
+                <!-- app.js has code in here -->
+
+            </div>
+
+            <div id  = "reset">
+
+                <button type = "button" id ="reset-button"><a class = "reset">RESET THE GAME</a></button>
+
+            </div>
+
+        <div id= "footer">
+
+          <a href="https://facebook.com" target="_blank"><img class="facebook" src="facebook-logo.png" /></a>
+          <a href="https://linkedin.com" target="_blank"><img class="linkedin" src="pngwing.com (1).png" /></a>
+          <a href="https://twitter.com" target="_blank"><img class="twitter" src="pngwing.com.png" /></a>
+
+        </div>
+
+    </div>
+
+<script src="./app.js"></script>
+
+<!-- <script src="./rough.js"></script>    Just for practice -->
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: -webkit-linear-gradient(top left, rgba(40, 20, 110, 1.0), rgba(233, 79, 113, 1.0));
+}
+
+#ticTacToe-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    color: orange;
+    text-align: center;
+    font-size: 30px;
+    height: 100px;
+    font-family: 'Frijole', cursive;
+}
+
+#players-name {
+    margin-top: 35px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#player-1-name {
+    margin: 25px;
+    margin-right: 450px;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    font-size: 20px; 
+    border: 2px solid red;
+}
+
+#player-2-name {
+    margin: 15px;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid blue;
+}
+
+#player1, #player2 {
+    font-size: 40px;
+}
+
+ a.player:hover {
+     color: #00FFFF
+ }
+
+ #toss-btn {
+     height: 60px;
+     width: 70px;
+     margin-left: 25px;
+     font-size: 20px;
+     font-weight: bolder;
+     background-color: lawngreen;
+     border: 1px solid black;
+     border-radius: 50%;
+ }
+
+ #assign-players {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     margin-top: 40px;
+ }
+
+ #random1, #random2 {
+     font-size: 30px;
+     margin-right: 15px;
+     font-weight: bold;
+ }
+
+ #nameX, #nameO {
+     font-size: 30px;
+     font-weight: bolder;
+     padding: 5px;
+     background-color: green;
+ }
+
+ #info {
+     font-size: 40px;
+     margin: 0 210px 0 210px;
+     font-weight: bolder;
+     color: yellowgreen;
+ }
+
+ #board {
+    height: 360px;
+    width: 360px;
+
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     flex-wrap: wrap;
+     background-color: #708090;
+     margin-top: 40px;
+ }
+
+ .cell {
+     flex: 0 0 120px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     font-size: 3em;
+     
+ }
+
+ .cell:nth-child(3n+2) { 
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+  } 
+
+ .cell:nth-child(n+4):nth-child(-n+6) {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  } 
+
+  #reset {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 35px;
+  }
+
+  #reset-button {
+       height: 60px;
+       width: 300px;
+       font-size: 30px;
+       font-weight: bolder;
+       text-align: center;
+       color: white;
+       background-color: black;
+  }
+
+  a.reset:hover {
+      color: red;
+  }
+
+  #footer {
+    margin-top: 30px;
+    background-color: #21d190;
+    background-image: linear-gradient(315deg, #21d190 0%, #d65bca 74%);
+    width: 1500px;
+    text-align: center;
+}
+
+.facebook,
+.linkedin,
+.twitter {
+    height: 60px;
+    width: 60px;
+}
+
+.linkedin{
+    margin: 0 400px 0 400px;
+}
+
+@media screen and (max-width: 375px) {
+   
+
+
+    #form {
+        margin-top: 5px;
+    }
+
+    #assign-players {
+        margin-top: 30px;
+    }
+
+    #player-1-name {
+        margin: 0 60px 0 5px;
+        height: 30px;
+        width: 100px;
+        font-size: 8px;
+    }
+    
+    #player-2-name {
+        margin: 0 50px 0 5px;
+        height: 30px;
+        width: 100px;
+        font-size: 8px;
+    }
+
+    #player1, #player2 {
+        margin-right: 10px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    #toss-btn {
+        height: 40px;
+        width: 40px;
+        font-size: 10px;
+    }
+
+    #random1, #random2 {
+        font-size: 15px;
+    }
+
+    #nameX, #nameO {
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 5px;
+        background-color: green;
+    }
+
+    #info {
+        font-size: 10px;
+        margin: 0 70px 0 70px;
+    }
+
+    #board {
+        height: 260px;
+        width: 260px;
+         margin-top: 30px;
+     }
+
+     .cell {
+        flex: 0 0 86px;
+        font-size: 2em;  
+    }
+
+     #reset {
+        margin-top: 20px;
+    }
+  
+    #reset-button {
+         height: 40px;
+         width: 200px;
+         font-size: 20px;
+    }
+
+    #footer {
+        width: 500px; 
+    }
+    
+    .facebook,
+    .linkedin,
+    .twitter {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .linkedin{
+        margin: 0 10px 0 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 540px) {
+    body {
+        height: 100vh;
+    }
+
+    #form {
+        margin-top: 5px;
+    }
+
+    #assign-players {
+        margin-top: 30px;
+    }
+
+    #player-1-name {
+        margin: 0 60px 0 5px;
+        height: 30px;
+        width: 100px;
+        font-size: 8px;
+    }
+    
+    #player-2-name {
+        margin: 0 50px 0 5px;
+        height: 30px;
+        width: 100px;
+        font-size: 8px;
+    }
+
+    #player1, #player2 {
+        margin-right: 10px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    #toss-btn {
+        height: 40px;
+        width: 40px;
+        font-size: 10px;
+    }
+
+    #random1, #random2 {
+        font-size: 15px;
+    }
+
+    #nameX, #nameO {
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 5px;
+        background-color: green;
+    }
+
+    #info {
+        font-size: 10px;
+        margin: 0 70px 0 70px;
+    }
+
+    #board {
+        height: 260px;
+        width: 260px;
+         margin-top: 30px;
+     }
+
+     .cell {
+        flex: 0 0 86px;
+        font-size: 2em;  
+    }
+
+     #reset {
+        margin-top: 20px;
+    }
+  
+    #reset-button {
+         height: 40px;
+         width: 200px;
+         font-size: 20px;
+    }
+
+    #footer {
+        width: 500px; 
+    }
+    
+    .facebook,
+    .linkedin,
+    .twitter {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .linkedin{
+        margin: 0 150px 0 150px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 600px;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+
+    #form {
+        margin-top: 30px;
+    }
+
+    #assign-players {
+        margin-top: 30px;
+    }
+
+    #player-1-name {
+        margin: 0 60px 0 5px;
+        /* margin-right: 100px; */
+        height: 30px;
+        width: 150px;
+        font-size: 12px;
+    }
+    
+    #player-2-name {
+        margin: 0 5px 0 5px;
+        height: 30px;
+        width: 150px;
+        font-size: 12px;
+    }
+
+    #player1, #player2 {
+        margin-right: 10px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    #toss-btn {
+        height: 50px;
+        width: 60px;
+        font-size: 15px;
+    }
+
+    #random1, #random2 {
+        font-size: 20px;
+    }
+
+    #nameX, #nameO {
+        font-size: 25px;
+        font-weight: bolder;
+        padding: 5px;
+    }
+
+    #info {
+        font-size: 30px;
+        margin: 0 50px 0 50px;
+    }
+
+    #board {
+        height: 320px;
+        width: 320px;
+         margin-top: 70px;
+     }
+
+     .cell {
+        flex: 0 0 106px;
+        font-size: 2em;  
+    }
+
+     #reset {
+        margin-top: 40px;
+    }
+  
+    #reset-button {
+         height: 50px;
+         width: 300px;
+         font-size: 30px;
+    }
+
+    #footer {
+        margin-top: 60px;
+        height: 60px;
+        width: 600px; 
+    }
+    
+    .facebook,
+    .linkedin,
+    .twitter {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .linkedin{
+        margin: 0 150px 0 150px;
+    }
+
+}
